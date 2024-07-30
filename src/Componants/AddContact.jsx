@@ -33,7 +33,7 @@ const AddContact = () => {
     setErrors(errs)
     if (errs.name === "" && errs.email === "" && errs.phone === "") {
 
-      axios.post("https://contactms-api-six.vercel.app/contactmsyt/addcontact", values,
+      axios.post("https://contactms-api-six.vercel.app/contactms/addcontact", values,
         {
           headers: {
             Authorization: `Berear ${localStorage.getItem("token")}`

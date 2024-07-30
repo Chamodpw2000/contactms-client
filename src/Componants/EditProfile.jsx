@@ -34,7 +34,7 @@ const EditProfile = () => {
   useEffect(() => {
 
 
-    axios.get("https://contactms-api-six.vercel.app/contactmsyt/getprofile", {
+    axios.get("https://contactms-api-six.vercel.app/contactms/getprofile", {
       headers: {
         Authorization: `Bearer ${localStorage.getItem("token")}`
       }
@@ -78,7 +78,7 @@ const EditProfile = () => {
     if (errs.name === "" && errs.email === "") {
 
 
-      axios.put("https://contactms-api-six.vercel.app/contactmsyt/editprofile/", values,
+      axios.put("https://contactms-api-six.vercel.app/contactms/editprofile/", values,
         {
           headers: {
             Authorization: `Berear ${localStorage.getItem("token")}`
