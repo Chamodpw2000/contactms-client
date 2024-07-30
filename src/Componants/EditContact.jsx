@@ -37,7 +37,7 @@ const EditContact = () => {
    
 
     if (errs.name === "" && errs.email === "" &&  errs.phone ==="")  {
-      axios.put("http://127.0.0.1:3000/contactmsyt/updatecontact/"+id, values,
+      axios.put("https://contactms-api-six.vercel.app/contactmsyt/updatecontact/"+id, values,
         {headers:{
             Authorization:`Berear ${localStorage.getItem("token")}`
         }
@@ -85,7 +85,7 @@ const EditContact = () => {
     useEffect(() => {
 
     
-        axios.get("http://127.0.0.1:3000/contactmsyt/contacts/"+id, {
+        axios.get("https://contactms-api-six.vercel.app/contactmsyt/contacts/"+id, {
           headers: {
             Authorization: `Berear ${localStorage.getItem("token")}`
           }
