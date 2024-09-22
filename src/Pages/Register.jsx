@@ -27,7 +27,7 @@ const Register = () => {
     const errs = validationReg(values)
     setErrors(errs)
     if (errs.name === "" && errs.email === "" && errs.password === "") {
-      axios.post("https://contactms-api-six.vercel.app/contactms/register", values)
+      axios.post("http://127.0.0.1:3000/contactmsyt/register", values)
         .then(res => {
           if(res.data.success){
 

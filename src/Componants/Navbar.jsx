@@ -2,7 +2,6 @@ import React, { useContext, useState } from 'react'
 import '../assets/css/navbar.css'
 import { Link } from 'react-router-dom'
 import { UserContext } from '../App'
-import Sidebar from './Sidebar'
 
 
 
@@ -11,6 +10,7 @@ const Navbar = () => {
 
 
     const { user } = useContext(UserContext)
+      
     return (
         <div className="navbar">
             <div className="navbar-left">

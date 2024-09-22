@@ -42,7 +42,7 @@ const Contacts = () => {
       confirmButtonText: "Yes, delete it!"
     }).then((result) => {
       if (result.isConfirmed) {
-        axios.delete(`https://contactms-api-six.vercel.app/contactms/deletecontact/${id}`, {
+        axios.delete(`http://127.0.0.1:3000/contactmsyt/deletecontact/${id}`, {
           headers: {
             Authorization: `Berear ${localStorage.getItem("token")}`,
           },
@@ -96,7 +96,7 @@ const Contacts = () => {
 
     setLoading(true)
 
-    axios.get("https://contactms-api-six.vercel.app/contactms/contacts", {
+    axios.get("http://127.0.0.1:3000/contactmsyt/contacts", {
       headers: {
         Authorization: `Berear ${localStorage.getItem("token")}`
       }

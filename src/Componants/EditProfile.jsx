@@ -34,7 +34,7 @@ const EditProfile = () => {
   useEffect(() => {
 
 
-    axios.get("https://contactms-api-six.vercel.app/contactms/getprofile", {
+    axios.get("http://127.0.0.1:3000/contactmsyt/getprofile", {
       headers: {
         Authorization: `Bearer ${localStorage.getItem("token")}`
       }
@@ -78,7 +78,7 @@ const EditProfile = () => {
     if (errs.name === "" && errs.email === "") {
 
 
-      axios.put("https://contactms-api-six.vercel.app/contactms/editprofile/", values,
+      axios.put("http://127.0.0.1:3000/contactmsyt/editprofile/", values,
         {
           headers: {
             Authorization: `Berear ${localStorage.getItem("token")}`
