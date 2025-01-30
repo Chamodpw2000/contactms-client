@@ -9,7 +9,8 @@ import { UserContext } from '../App'
 
 
 
-
+// test@mail.com
+// testtest
 
 const Login = () => {
 
@@ -35,7 +36,7 @@ const Login = () => {
     const errs = Validation(values)
     setErrors(errs)
     if (errs.email === "" && errs.password === "") {
-      console.log("hiiii")
+   
       axios.post("http://127.0.0.1:3000/contactmsyt/login", values)
         .then(res => {
           if (res.data.success) {

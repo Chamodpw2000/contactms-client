@@ -10,6 +10,10 @@ const Navbar = () => {
 
 
     const { user } = useContext(UserContext)
+
+    
+
+
       
     return (
         <div className="navbar">
